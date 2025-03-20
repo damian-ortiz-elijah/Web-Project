@@ -64,16 +64,86 @@
     <!-- Placeholder for navigation that is in navbar.html-->
     <div id="nav-placeholder"></div>
 
-    <div class="alert alert-info" role="alert">
-      You can update the navbar.html file with a different navigation menu. For
-      bootstrap code for different navbars go to
-      <a
-        href="https://getbootstrap.com/docs/5.3/components/navbar/"
-        target="_blank"
-        >Visit Bootstrap navbar</a
-      >. Delete this part when you are done.
+    <!--
+    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2015/12/01/08/26/notebook-1071775_1280.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/IMG_0618.JPG?v=1742481841294"  class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/image0%20(1).jpeg?v=1742482469922" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    -->
+
+    <div
+      id="carousel"
+      class="carousel slide"
+      style="width: 800px; height: 400px"
+    >
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/12/01/08/26/notebook-1071775_1280.jpg"
+            class="d-block w-100"
+            alt="First Slide"
+            style="width: 800px; height: 400px; object-fit: cover"
+          />
+        </div>
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <img
+            src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/IMG_0618.JPG?v=1742481841294"
+            class="d-block w-100"
+            alt="Second Slide"
+            style="width: 800px; height: 400px; object-fit: cover"
+          />
+        </div>
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <img
+            src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/image0%20(1).jpeg?v=1742482469922"
+            class="d-block w-100"
+            alt="Third Slide"
+            style="width: 800px; height: 400px; object-fit: cover"
+          />
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
+    <!--
     <img
       src="https://cdn.pixabay.com/photo/2015/12/01/08/26/notebook-1071775_1280.jpg"
       class="mx-auto d-block"
@@ -84,26 +154,48 @@
     <div class="container bg-primary-subtle text-primary-emphasis p-3">
       <p>Read the project iteration 01 requirements.</p>
     </div>
-<div>
-  <h1>
-    Resume Summary:
-  </h1>
-  <p>
-    summary 
-  </p>
+    <div>
+      <h1>Resume Summary:</h1>
+      <p>summary</p>
+      <div class="card" style="width: 18rem">
+        <img src="https://cdn.pixabay.com/photo/2016/11/05/11/15/resume-1799955_1280.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>School and Major:</h2>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGHKzU5kpS66Zsx5b9RP_pm2r-e5eTCPXHw&s"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
     </div>
     <div>
-       <h2>
-         School and Major:
-      </h2>
-      <p>
-        summary of school and major 
-      </p>
+      <h2>skils list</h2>
+    <div class="card" style="width: 18rem;">
+  <img src="https://cdn.pixabay.com/photo/2021/11/21/04/54/skills-6813167_1280.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+    
     </div>
     <div>
-      <h2>
-        
-      </h2>
+      <h2></h2>
     </div>
     <!--  script code to add navbar -->
     <script>
