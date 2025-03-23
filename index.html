@@ -7,28 +7,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Using Bootstrap Stylesheet -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Bootstrap Bundle JS (includes Popper) -->
-
     <title>Website Template</title>
   </head>
-
-  <!-- body content is what is displayed in browser -->
   <body>
     <!-- Bootstrap 5 switch -->
     <div class="form-check form-switch">
@@ -61,37 +48,18 @@
         });
       });
     </script>
-    <!-- Placeholder for navigation that is in navbar.html-->
-    <div id="nav-placeholder"></div>
-
-    <!--
-    <div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://cdn.pixabay.com/photo/2015/12/01/08/26/notebook-1071775_1280.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/IMG_0618.JPG?v=1742481841294"  class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/image0%20(1).jpeg?v=1742482469922" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    -->
-
+    <!-- Placeholder for navigation that is in navbar.html with aria labels -->
     <div
-      id="carousel"
+      id="nav-placeholder"
+      role="navigation"
+      aria-label="Main site navigation"
+    ></div>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExample"
       class="carousel slide"
-      style="width: 800px; height: 400px"
+      style="width: 800px; height: 400px; margin: auto"
     >
       <div class="carousel-inner">
         <!-- First Slide -->
@@ -99,8 +67,8 @@
           <img
             src="https://cdn.pixabay.com/photo/2015/12/01/08/26/notebook-1071775_1280.jpg"
             class="d-block w-100"
-            alt="First Slide"
-            style="width: 800px; height: 400px; object-fit: cover"
+            alt="Computer Science picture"
+            style="height: 400px; object-fit: cover"
           />
         </div>
         <!-- Second Slide -->
@@ -108,8 +76,8 @@
           <img
             src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/IMG_0618.JPG?v=1742481841294"
             class="d-block w-100"
-            alt="Second Slide"
-            style="width: 800px; height: 400px; object-fit: cover"
+            alt="picture of kubernetes workshop i was in"
+            style="height: 400px; object-fit: cover"
           />
         </div>
         <!-- Third Slide -->
@@ -117,8 +85,8 @@
           <img
             src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/image0%20(1).jpeg?v=1742482469922"
             class="d-block w-100"
-            alt="Third Slide"
-            style="width: 800px; height: 400px; object-fit: cover"
+            alt="a computer that i built"
+            style="height: 400px; object-fit: cover"
           />
         </div>
       </div>
@@ -143,61 +111,211 @@
       </button>
     </div>
 
-    <!--
-    <img
-      src="https://cdn.pixabay.com/photo/2015/12/01/08/26/notebook-1071775_1280.jpg"
-      class="mx-auto d-block"
-      style="width:500px;height600px;"
-    />
+    <div></div>
 
-    <!-- Content of webpage -->
-    <div class="container bg-primary-subtle text-primary-emphasis p-3">
-      <p>Read the project iteration 01 requirements.</p>
-    </div>
-    <div>
-      <h1>Resume Summary:</h1>
-      <p>summary</p>
-      <div class="card" style="width: 18rem">
-        <img src="https://cdn.pixabay.com/photo/2016/11/05/11/15/resume-1799955_1280.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+    <div class="container mt-4">
+      <!-- Resume Summary Section -->
+
+      <!-- class that seperates the cards into rows so thyre not verically stacked theyll be side to side -->
+      <div class="row">
+        <!-- resume summary card  -->
+        <div class="col-md-4">
+          <h2>Resume Summary:</h2>
+          <div class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/11/05/11/15/resume-1799955_1280.png"
+              class="card-img-top"
+              alt="Resume"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                I'm a hardworking person with a high school diploma and an
+                interest as well as currently majoring in computer science. I
+                have a lot of computer skills. If it is building them piece by
+                piece I can or even writing little snippets of java I can do
+                that. Amazing communication skills also have an ability to work
+                with diverse workplace while working as an effective member of
+                the team.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--school and major card  -->
+        <div class="col-md-4">
+          <h2>School and Major:</h2>
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGHKzU5kpS66Zsx5b9RP_pm2r-e5eTCPXHw&s"
+              class="card-img-top"
+              alt="School"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Right now im attending Metro State Uninversity her in denver im
+                currently trying to get my
+                <a
+                  href="https://www.msudenver.edu/computer-sciences/computer-science-major-bs/"
+                  target="_blank"
+                >
+                  Computer Science Major</a
+                >
+                to pursue my passion with working with computers
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- skills card  -->
+        <div class="col-md-4">
+          <h2>Skills:</h2>
+          <div class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/11/21/04/54/skills-6813167_1280.jpg"
+              class="card-img-top"
+              alt="Skills"
+            />
+            <div class="card-body">
+              <ul class="solid">
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Problem Soilving</li>
+                <li>Determination</li>
+              </ul>
+              <p class="card-text">
+                These are all skills i think i thrive in i feel like these
+                skills reperesent me as a person
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="container mt-4">
+      <!-- things i like to do section -->
+      <div class="text-center">
+        <!-- this class allows me to center the things i like to do section of the index page  -->
+        <h2>Things I Like to Do</h2>
+        <h2>here are some of my hobbies and intrests:</h2>
+        <ul class="solid">
+          <!-- list for hobbies  -->
+          <li>
+            Snowboarding at my favriote ski resort<a
+              href="https://www.winterparkresort.com/-/media/winter-park/winter-2425/maps/2425wintertrailmap1107.pdf?rev=700afd3f825043d3a3d53803cf387fba"
+              target="_blank"
+            >
+              Winter park</a
+            >
+          </li>
+          <li>
+            Travelling going to Festivals like
+            <a href="https://suenosmusicfestival.com/lineup/" target="_blank">
+              Suenos
+            </a>
+          </li>
+          <li>Basketball</li>
+        </ul>
+      </div>
 
-    <div>
-      <h2>School and Major:</h2>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGHKzU5kpS66Zsx5b9RP_pm2r-e5eTCPXHw&s"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        style="max-width: 800px; height: 400px; margin: auto"
+      >
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
+
+        <!-- Carousel Inner Container -->
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/thumbnails%2Fsnowboard.jpeg?1742679237235"
+              class="d-block w-100"
+              alt="Snowboarding in the mountains"
+              loading="Snowbaording Picture"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Snowboarding Adventure</h5>
+              <p>When the snowboard trip made it out the groupchat.</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/basketball.jpeg?v=1742679261666"
+              class="d-block w-100"
+              alt="Basketball game in progress"
+              loading="Pre basketball game picture of the arena"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Basketball Game</h5>
+              <p>Round 2 of the playoffs when we made or chamionship run</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="https://cdn.glitch.global/5b3419e4-6947-4837-a1ea-5c47565d1e8e/festival.jpeg?v=1742679247896"
+              class="d-block w-100"
+              alt="Music festival with a large crowd"
+              loading="latin festival picture"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Music Festival</h5>
+              <p>Enjoying live music at a latin festival in chicago.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+          aria-label="Previous Slide"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+          aria-label="Next Slide"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <div>
-      <h2>skils list</h2>
-    <div class="card" style="width: 18rem;">
-  <img src="https://cdn.pixabay.com/photo/2021/11/21/04/54/skills-6813167_1280.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-    
-    </div>
-    <div>
-      <h2></h2>
-    </div>
-    <!--  script code to add navbar -->
+    <!-- Script code to add navbar -->
     <script>
       // Load the navigation menu into the placeholder
       $("#nav-placeholder").load("navbar.html");
