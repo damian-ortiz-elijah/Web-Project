@@ -1,4 +1,4 @@
-<html lang="en">
+`  533<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -17,7 +17,20 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      /* Ensure images are responsive and centered */
+      .diagram-img {
+        max-width: 100%; /* Image scales with container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Remove extra space below image */
+        margin: 20px auto; /* Center image horizontally */
+      }
 
+      /* Add spacing between sections for better readability */
+      .section {
+        margin-bottom: 40px;
+      }
+    </style>
     <title>Website Template</title>
   </head>
 
@@ -58,6 +71,121 @@
     <div id="nav-placeholder"></div>
 
     <h1>Internet Information</h1>
+    <!-- part one what is the internet -->
+    <div class="section">
+      <h2>What is the Internet and how does date travel within the Internet?</h2>
+      <p>
+       The Internet is a network of computers that are interconnect between each other that 
+      communicate using prtotocols that are standerized between all computers data then travels through 
+      physcial connections like wires fiber optics and WiFi the key concepts include:
+      </p>
+      <ul>
+        <li><strong>Networks:</strong> Groups of devices that are interconnected</li>
+        <li>
+          <strong>Protocols:</strong> Rules for data communication are IP/TCP which stands for Internet Protocol
+          and Transmisission Control Protocol
+        </li>
+        <li>Routers then help direct packets to their destination
+        </li>
+        <li>
+          <strong>Reliability:</strong> These protocols help ensure both data integrity and the
+          delivery of data
+        </li>
+      </ul>
+      <!-- diagram showing data packets traveling through networks -->
+      <img
+        src="https://photos.fife.usercontent.google.com/pw/AP1GczPSftllyJug2vwYnmkpkIKFXCuhv54NykFyV7u7E5atQZGyreQDcn8=w1054-h615-s-no-gm?authuser=0"
+        alt="Diagram of data packets traveling through networks"
+        class="diagram-img"
+      />
+      <!-- External link for further reading -->
+   
+       <p>
+        Learn more about the Internet:
+        <a href="https://edu.gcfglobal.org/en/internetbasics/what-is-the-internet/1/" target="_blank"
+          >How the Internet Works</a
+        >.
+      </p>
+    </div>  
+
+
+    <!-- part two data encoding  -->
+    <div class="section">
+      <h2>What is Encoding?</h2>
+      <p>
+        How I would define encoding is a process where is taking any type of infromation that deals 
+        with computers and converting it from one ofrm into another usually for the purpose of either 
+        storage tarnsmission or processing 
+        
+      </p>
+      <ul>
+        <li><strong>Binary:</strong> Base-2 numbering system  which is your 0s and 1s.</li>
+        <li><strong>Decimal:</strong> Base-10 numbering system which is 0-9.</li>
+        <li><strong>ASCII:</strong> Character encoding standard for text this is the encoding format used on your keyboard.</li>
+      </ul>
+      <!-- Visual example of encoding -->
+      <img src="https://i.ytimg.com/vi/H4l42nbYmrU/maxresdefault.jpg" alt="Example of ASCII encoding" class="diagram-img" />
+    </div>
+
+    <!-- part 3 what is encryption -->
+    <div class="section">
+      <h2>What is Encryption?</h2>
+      <p>
+        Encryption is the process of converting data into a secure format to
+        protect it from unauthorized access. It ensures confidentiality,
+        integrity, and authenticity of data.
+      </p>
+      <h3>Symmetric Encryption</h3>
+      <p>
+        Uses a single key for both encryption and decryption. Common use cases
+        include file encryption and secure communication.
+      </p>
+      <h3>Asymmetric/Symmetric Encryption</h3>
+      <p>
+        The difference from symmetric and asymmetric encryption is symmetric encryption uses the exact 
+        same key to decrypt and encrypt symmetric is usually faster but less secure asymmetric decryption 
+        and encryption uses a public key that will encrypt and decrypt well on the other end you have a private 
+        key that could only be used by one device that allows you to decrypt and encrypt this way sometimes takes 
+        a a lil longer built also provides more protection
+      </p>
+      <!-- Diagram comparing symmetric and asymmetric encryption -->
+      <img
+        src="..."
+        alt="Comparison of symmetric and asymmetric encryption"
+        class="diagram-img"
+      />
+      <!-- External link to an encryption tool -->
+      <p>
+        Try an online encryption tool:
+        <a href="https://www.tools4noobs.com/online_tools/encrypt/" target="_blank"
+          >Encryption Demo</a
+        >.
+      </p>
+    </div>
+
+    <!-- Section 4: Secure Communication Practices -->
+    <div class="section">
+      <h2>Secure Communication Practices</h2>
+      <h3>HTTPS and Security</h3>
+      <p>
+        HTTPS secures data that is transmitted by using SSL/TLS encryption which basically begins with a handshake 
+        between what we call the browser and the server to then establish a secure connection between the two  During this handshake 
+        the server provides a digital key to then prove its identity which then causes both sides to agree on a 
+        shared session key by using  what id described earlier which is asymmetric encryption once the session key is all set all the data is then encrypted 
+        using symmetric encryption which ensures that the information will remain private and cannot be tampered with 
+        and will only accessible by the intended users 
+     
+      </p>
+      <!-- Icon representing a secure connection -->
+      <img src="..." alt="HTTPS secure connection icon" class="diagram-img" />
+      <h3>Best Practices</h3>
+      <ul>
+        <li>Use strong and unique passwords that are hard to guess</li>
+        <li>Keep software and systems up to date if they arent its easier to bypass</li>
+        <li>Enable two-factor authentication (2FA)</li>
+        <li>Avoid using public WiFi for sensitive transactions becuase on some public WiFi its easy to acces sensitive info</li>
+      </ul>
+    </div>
 
     <!--  script code to add navbar -->
     <script>
